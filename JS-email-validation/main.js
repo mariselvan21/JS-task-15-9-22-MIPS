@@ -13,27 +13,39 @@ function updateValues(){
 }
 
 // sum of digit numbers
-var number=544;
-console.log("given number "+number);
-var temp=number;
-var digits=0;
-var lastDigit1=temp%10;
- temp=(temp-lastDigit1)/10;
-var lastDigit2=temp%10;
-temp=(temp-lastDigit2)/10;
-var lastDigit3=temp;
-console.log("sum of given number");
-var sum=lastDigit1+lastDigit2+lastDigit3;
+// var number=544;
+// console.log("given number "+number);
+// var temp=number;
+// var digits=0;
+// var lastDigit1=temp%10;
+//  temp=(temp-lastDigit1)/10;
+// var lastDigit2=temp%10;
+// temp=(temp-lastDigit2)/10;
+// var lastDigit3=temp;
+// console.log("sum of given number");
+// var sum=lastDigit1+lastDigit2+lastDigit3;
+// console.log(sum);
+
+//sum of digit numbers
+var number=prompt('enter any number');
+var sum=0;
+var lastDigit=0;
+
+while(number){
+    lastDigit=number%10;
+    sum=sum+lastDigit;
+    number=(number-lastDigit)/10;
+}
 console.log(sum);
 
 // 10 numbers in Ascending order using array
-const numbers=[0,1,34,4,44444,7,9,2,5555,8,3,5,6,55,43,333];
+const numbers=[0,1,34,4,44444,7,9,2,5555,10];
 const ascendingOrder=numbers.sort(function(a,b){
     return a-b;
 });
 console.log(ascendingOrder);
-const descendingOrder=ascendingOrder.reverse();
-console.log(descendingOrder);
+// const descendingOrder=ascendingOrder.reverse();
+// console.log(descendingOrder);
 
 
 
